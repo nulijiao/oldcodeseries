@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+form{
+    animation:bounceOutLeft 2s linear ;
+}
+.active  .give{
+    animation: bounceInLeft 3s linear ;
+}
+#two{
+    display: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #fff; /*这里设置的是活动导航的颜色*/
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border: 3px solid #fff;/*这里设置的是非活动导航的颜色*/
+}
+#fp-nav ul li:nth-child(2){
+    display: none;
+}
+#one{
+    position: relative;
+}
+form{
+    width: 50%;
+    height: 400px;
+    background:rgba(0,0,0,.5);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+}
+td{
+    text-align: center;
+    color:white;
+    font-size:20px;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    border-radius:5px ;
+}
+
+.row{
+    height: 50px;
+
+
+    margin-top: 20px;
+}
+.row div{
+    line-height: 50px;
+    text-align: center;}
+#log{
+
+    height: 50px;
+    border-radius: 5px;
+    background-color:#46b8da;
+    color:white;
+    width: 50%;
+    margin:auto;    position: relative;
+}
+#name{
+   text-align: center;
+}
+#num{
+   text-align: center;
+}
+#rest{
+
+    height: 50px;
+    border-radius: 5px;
+    background-color:#46b8da;
+    color:white;
+   position: relative;
+    margin:auto;
+    width: 50%;}
+h1{
+    color: white;
+}
+
+.row  span{
+    font-size: 30px;
+    color:white;
+}
+@media (max-width: 800px) {
+   body  .row span{
+       font-size: 10px;
+
+   }
+}

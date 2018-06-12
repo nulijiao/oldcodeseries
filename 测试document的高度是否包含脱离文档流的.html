@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+     *{margin:0;
+     padding:0;
+     border:0;}
+        div{
+            height: 500px;
+
+        }
+        #d{
+            float:left;
+        }
+    </style>
+</head>
+<body>
+<div>1</div>
+<div id="d">2</div>
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+    $(function () {
+        console.log($(document).height())
+//        结果表明document包含所有脱离文档流和未脱离文档流的元素高度之和
+    })
+</script>
+</body>
+</html>

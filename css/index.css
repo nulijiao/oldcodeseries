@@ -1,0 +1,659 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+.learn{
+   position: absolute;
+    left:80%;
+    top:30%;
+}
+body .navbar-header  #svg{
+  transform: translate(10%,50%);
+}
+ body   #fixPos{
+     position:fixed;
+     top:0;
+     left:0;
+     z-index:9999999999;
+ }
+.loginH1{
+  color:white;
+
+
+    font-size: 60px;
+    text-shadow:1px 2px 3px #000;
+}
+.active .loginH1{
+    animation: bounceInRight 3s linear ;
+  }
+ .loginH3{
+    color:white;
+
+    font-size: 50px;
+    margin-top: 2%;
+    text-shadow:5px  5px 10px #000 ;
+}
+.active  .loginH3{
+    animation: bounceInLeft 3s linear;
+
+}
+body {
+    height:100%;
+    font-family: "Lato", "Serif";
+    font-weight: 300;
+    padding:0;
+    margin:0;
+    font-size:16px;
+    line-height: 28px;
+    color: #777;
+    background: #fff;
+    overflow-x:hidden;
+    position: relative;
+}
+
+
+a {
+    text-decoration: none
+}
+p {
+    padding: 0 0 1em;
+    margin:0;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #fff; /*这里设置的是活动导航的颜色*/
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border: 3px solid #fff;/*这里设置的是非活动导航的颜色*/
+}
+#introduce .give {
+    color: whitesmoke;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    transition: all 2s linear;
+
+}
+.active  .give{
+    animation: bounceInLeft 3s linear ;
+}
+
+#introduce{
+clear:both;
+   padding-top:10%;
+}
+.give:hover{
+    background-color:lightslategrey;
+    color:burlywood;
+    border:none;
+}
+li{
+    list-style: none;
+}
+.active .can1{ animation: fadeIn 8s linear;
+transition: all 2s linear;
+}
+
+#widthLanguage{
+    position: relative;
+    height:0;
+}
+#third{
+    position: relative;
+}
+
+#third  h1{
+   position:absolute;
+    bottom:10%;
+    right:10%;
+    width: 30%;
+    color:white;
+
+
+}
+.thirdH1{
+    animation: bounceInRight 10s linear ;
+}
+  .widthLanguageImg{
+
+    position: absolute;
+    right:-300px;
+    bottom: 0;
+    width: 300px;
+
+    transition:all 2s linear;
+/*animation-delay:-1s;*/
+
+}
+#four  .widthLanguageImg{
+
+    position: absolute;
+    right:-300px;
+    bottom: 0;
+    width: 300px;
+
+    transition:all 2s linear;
+
+
+}
+.widthLanguageH1{
+    color:white;
+
+
+}
+#textImg{
+    position: absolute;
+    right:5%;
+    top:20%;
+    width: 300px;
+}
+.active  .widthLanguageH1{
+    animation: bounceInLeft 2s linear ;
+}
+.active  .widthLanguageImg{
+    animation:flyLeft 10s linear;
+}
+.section{
+
+   clear:both;
+
+
+}
+
+  .navbar-nav {
+    width: 70%;
+}
+  .navbar-nav li{
+    width: 15%;
+    height:40px;
+    margin-left: 10%;
+  line-height: 40px;
+    transform: translate(0,50%);
+      /*前面是左右X后面是Y轴*/
+
+}
+.navbar-nav li a{
+    font-size: 20px;
+}
+#like{
+    position:fixed;
+    bottom:10%;
+    right:5%;
+    z-index:99999999999;
+    width: 200px;
+    height: 50px;
+    border-radius:20px;
+    border:1px solid red;
+    vertical-align: middle;
+    line-height: 50px;
+}
+#line{
+    width: 2px;
+    height: 32px;
+    margin-top: 9px;
+    background-color: red;
+    margin-left: 20px;
+}
+#like span{
+   float:left;
+color:red;
+    height: 32px;
+    text-align: center;
+    margin-left: 20px;
+    line-height: 32px;
+    margin-top: 9px;}
+#heart{
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../image/rating-off.png");
+    }
+#par{
+    position:relative;
+}
+
+.PAR{
+    animation:flip 3s linear;
+}
+#tip{
+    position:absolute;
+
+    color:whitesmoke;
+    background:rgba(0,0,0,.5);
+}
+
+#more{
+   position: absolute;
+    left:80%;
+   bottom:20%;
+    transform: translate(-50%,-50%);
+}
+
+#login{
+    position: relative;
+}
+
+
+   .loginImg{
+    width: 300px;
+
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+
+    transition: all 2s linear;
+}
+#third   .loginImg{
+    width: 300px;
+
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+
+    transition: all 2s linear;
+}
+.active    .loginImg{
+    animation:fly  5s  linear ;
+    animation-delay: -2s;
+}
+.last{
+  transition: all 2s linear;
+    opacity: 0;
+    transform: skew(90deg);
+}
+.active  .last{
+    opacity: 1;
+    transform: skew(0deg);
+}
+@keyframes fly {
+   0%{z-index:999999999999;
+       left:0;
+       bottom:0;
+       transform:rotate(5deg);
+   }
+    20%{
+        width: 500px;
+        left:20%;
+        bottom:10%;
+        transform:rotate(10deg);
+        z-index:9999999999999;
+    }
+    40%{
+        z-index:999999999999;
+        width:700px;
+        left:40%;
+        transform:rotate(30deg);
+        bottom:10%;
+        animation-delay: 5s;
+    }
+    60%{
+        width: 500px;
+        z-index:99999999999;
+        left:60%;
+        transform:rotate(35deg);
+        bottom:10%;
+    }
+   80%{
+       z-index:99999999999;
+       width: 300px;
+       transform:rotate(40deg);
+       left:80%;
+       bottom:20%;
+    }
+    100%{
+        z-index:99999999999;
+        width: 200px;
+        left:100%;
+        bottom:10%;
+        transform:rotate(45deg);
+    }
+}
+
+#widthLanguage{
+
+    position: relative;
+
+ }
+#can1{
+    height: 500px;
+}
+.active .more{
+    animation:  bounceInUp  3s  linear ;
+}
+
+
+@keyframes flyLeft {
+    0%{
+        z-index:999999999999;
+        right:0;
+        bottom:0;
+        transform:rotate(-5deg);
+    }
+    20%{
+        width: 300px;
+        z-index:999999999999;
+        right:20%;
+        bottom:10%;
+        transform:rotate(-10deg);
+    }
+    40%{
+        width: 500px;
+        z-index:999999999999;
+        right:40%;
+        transform:rotate(-25deg);
+        bottom:8%;
+    }
+    60%{
+        width: 800px;
+        z-index:999999999999;
+        right:60%;
+        transform:rotate(-35deg);
+        bottom:5%;
+    }
+    80%{
+        width: 800px;
+        z-index:999999999999;
+        transform:rotate(-40deg);
+        right:80%;
+        bottom:5%;
+    }
+    100%{
+        width: 500px;
+        right:100%;
+        bottom:0;
+        transform:rotate(-45deg);
+    }
+}
+
+#login{
+    background-image:url('../image/背景1.jpg');
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height:800px;
+    overflow: hidden;
+}
+#textContent{
+    transform: translate(0,50%);
+    display: inline-block;
+
+}
+
+#textContent  p{
+    width: 20px;
+    font-size: 20px;
+    color:white;
+    background-color:grey;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.wid{
+    animation: bounceInLeft 3s linear ;
+}
+.use1{
+    color: white;
+    width: 30px;
+    font-size: 30px;
+}
+.use{color: white;
+    width: 30px;
+font-size: 30px;
+padding-top: 30%;}
+.active  .pText{
+    animation: fadeInUp 6s linear;
+
+}
+.active .pieDiv{
+    animation:fadeInDownBig 5s ease;
+}
+
+ #widthLanguage{
+     display: flex;
+     height:0;
+     background-image:url('../image/背景2.jpg');
+     /*background:rgba(0,0,0,0.5);*/
+     background-size:cover;
+     background-repeat: no-repeat;
+ }
+ #third{
+     background-image:url('../image/背景3.jpg');
+     height:800px;
+     background-size:cover;
+     background-repeat: no-repeat;
+     position:relative;
+ }
+.active .textImg{animation:fadeInDown 2s linear;}
+ body  #four{
+     background-image:url('../image/背景4.jpg');
+     height: 800px;
+     background-size:cover;
+     background-repeat: no-repeat;
+     position:relative;
+ }
+ #five{
+     background-image:url('../image/背景8.jpg');
+     height: 500px;
+     background-size:cover;
+     background-repeat: no-repeat;
+     position: relative;
+     overflow: hidden;
+ }
+ #salary{
+     height: 500px;
+     width: 70%;
+
+ }
+ #five span{
+     background-image:url('../image/chart.png');
+     width: 25%;
+     height:159px;
+   float:left;
+     margin:4px  10px;
+     border:1px solid white;
+transition:all 1s linear;
+ }
+#bag span:nth-child(2){
+
+    background-position:-25% 0;
+    transform: rotate(20deg);
+}
+#bag span:nth-child(3){
+    transform: rotate(6deg);
+    background-position:-50% 0;
+}
+#bag span:nth-child(4){
+    transform: rotate(10deg);
+    background-position:-75% 0;
+}
+#bag span:nth-child(5){
+    transform: rotate(-8deg);
+    background-position: 0  -159px;
+}
+#bag span:nth-child(6){
+    transform: rotate(7deg);
+    background-position: -25%  -318px;
+}
+.active   .salary{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    animation: fadeInLeft 2s linear;
+
+}
+
+#bag span:nth-child(7){
+    transform: rotate(-25deg);
+    background-position: -50% -159px;
+}
+#bag span:nth-child(8){
+    transform: rotate(15deg);
+    background-position: -75% -159px;
+}
+#bag span:nth-child(9){
+    transform: rotate(-32deg);
+    background-position: 0 -318px;
+}
+#bag span:nth-child(10){
+    transform: rotate(-15deg);
+    background-position: -50% -318px;
+}
+#bag span:nth-child(11){
+    transform: rotate(30deg);
+    background-position: -50% -318px;
+}
+#bag span:nth-child(12){
+    transform: rotate(-35deg);
+    background-position: -75% -318px;
+}
+
+ .bag{
+           position: absolute;
+           z-index:9999999;
+           width: 80%;
+           height: 500px;
+     left: 50%;
+     top:50%;
+     transform:translate(-50%,-50%);
+           background:rgba(0,0,0,1);
+
+       }
+#son{
+
+    height: 500px;
+   /*transform: translate(20%,0);*/
+
+}
+#bagPar{
+    position: relative;
+}
+ .active  #bagPar  .bag{
+     animation:fadeOutLeft 2s linear;
+     /*display: none;*/
+
+ }
+ body .navbar-brand{
+     width: 200px;
+     height: 80px;
+ }
+#third #pieDiv{
+
+    width: 50%;
+    height: 500px;
+
+}
+#data{
+    width: 50%;
+    height: 500px;
+
+
+}
+#load
+{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: #46b8da;
+    z-index:99999999999999999999999999999999;
+
+
+}
+#load span{
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 50%;
+
+    border-right:5px solid white;
+    animation: rotate 3s  linear infinite;
+}
+@keyframes rotate {
+   from{
+      transform: rotate(45deg);
+   }
+    to{
+        transform:rotate(360deg);
+    }
+}
+#load span:nth-child(2)
+{
+    transform: rotate(60deg);
+}
+#load span:nth-child(3)
+{
+    transform: rotate(90deg);
+}
+#load span:nth-child(4)
+{
+    transform: rotate(120deg);
+}
+#load span:nth-child(5)
+{
+    transform: rotate(150deg);
+}
+#load span:nth-child(6)
+{
+    transform: rotate(180deg);
+}
+.active   #bag   .span{
+    transform: rotate(0deg);
+    margin:0;
+    border:0;
+
+animation:fadeOutLeft 1s linear;
+opacity: 0;
+    /*display: none;*/
+}
+.active .data{
+    transition: all 2s linear;
+
+    animation: rotateInDownLeft 5s linear;
+}
+
+.t   img{
+
+position: absolute;
+bottom:0;
+    left:50%;
+    width: 500px;
+
+    animation:  fadeOutRight 2s linear;
+}
+.active .click{
+    opacity: 1;
+    animation: fadeInUp 10s linear;
+}
+.active   .data{
+    display: block;
+    animation:fadeInDown 20s linear;
+
+}
+#six {
+position: relative;
+    background-image:url('../image/背景13.jpg');
+  height:600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.LAST{
+    animation: rotateIn 5s linear;
+}
+#last{
+    height: 500px;
+
+}
+#seven{
+
+    background-image:url('../image/背景15.jpg');
+
+    background-size:cover;
+    background-repeat: no-repeat;
+}
